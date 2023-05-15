@@ -1,0 +1,31 @@
+<div class="card mat-card">
+    <h2>Educación</h2>
+    <table class = "table table-striped">
+        <thead>
+            <tr>            
+                <th>ID</th>    
+                <th>Titulo</th>
+                <th>Entidad</th>
+                <th>Duración</th>
+                <th>Options</th>
+            </tr>
+        </thead>  
+        <tbody>
+            <tr *ngFor = "let e of edu">                             
+                <td>{{e.id}}</td>
+                <td>{{e.titulo}}</td>
+                <td>{{e.entidad}}</td>            
+                <td>{{e.duracion}}</td>
+                
+                <td>                    
+                    <button (click) = "deleteEducacion(e.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    &nbsp;                    
+                    <button (click) = "editEducacion(e.id)" class = "btn btn-info">Update</button>
+                </td>             
+            </tr>
+        </tbody>
+    </table>   
+    <div>
+        <button (click) = "redirectNewEducacion()" class = "btn btn-success">New Educación</button>        
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="card mat-card">
+    <h2>Cursos</h2>
+    <table class = "table table-striped">
+        <thead>
+            <tr>            
+                <th>ID</th>    
+                <th>Titulo</th>
+                <th>Entidad</th>
+                <th>Fecha</th>
+                <th>Options</th>
+            </tr>
+        </thead>  
+        <tbody>
+            <tr *ngFor = "let c of cur">                             
+                <td>{{c.id}}</td>
+                <td>{{c.titulo}}</td>               
+                <td>{{c.entidad}}</td>
+                <td>{{c.fecha}}</td>
+                <td>                    
+                    <button (click) = "deleteCursos(c.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    &nbsp;                    
+                    <button (click) = "editCursos(c.id)" class = "btn btn-info">Update</button>
+                </td>             
+            </tr>
+        </tbody>
+    </table>   
+    <div>
+        <button (click) = "redirectNewCursos()" class = "btn btn-success">New Cursos</button>        
+    </div>
+</div>

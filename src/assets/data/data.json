@@ -1,0 +1,89 @@
+{
+	"name": "Patricia Herrera",
+	"backImage": "htpps://",
+	"image": "htpps//",
+	"position": "Software Developer/Testing at VENG S.A (CONAE)",
+	"company": {
+		"name": "VENG S.A (CONAE)",
+		"img": "htpps//",
+		"url": "#"
+	},
+	"school": {
+		"name": "Universidad Nacional de Cordoba",
+		"img": "htpps//",
+		"url": "#"
+	},
+	"ubication": "Cordoba(Argentina)",
+	"about": "Ingeniero en Computacion",
+	"experience": [
+        {
+		"position": "Developer/Testing",
+		"company": "VENG S.A (CONAE)",
+		"img": "htpps//",
+		"mode": "Jornada completa",
+		"start": "marzo 2020",
+		"end": "actulidad",
+		"timeElapsed": "2 años"
+	}
+],
+	"education": [{
+			"school": "Universidad Tecnológica Nacional",
+			"title": "Técnico Superior en Programación",
+			"img": "https://",
+			"career": "Desarrollo en Software",
+			"score": "0",
+			"start": "2014",
+			"end": "2016"
+		},
+		{
+			"school": "Universidad Nacional de Córdoba (FCEFyN)",
+			"title": "Ing. en Computacion",
+			"img": "https://",
+			"career": "Desarrollo en Software",
+			"score": "82",
+			"start": "2002",
+			"end": "2012"
+		},
+		{
+			"school": "Colegio San Francisco de Asis",
+			"title": "Bachiller",
+			"img": "https://",
+			"career": "Bachiller",
+			"score": "0",
+			"start": "1996",
+			"end": "2001"
+		}
+	],
+	"aptitudes": [{
+			"name": "Resolucion de problemas",
+			"progress": 75,
+			"confirms": 2,
+			"confirmsName": [{
+				"name": "Nikolai Emanuel Bayro"
+			}]
+		},
+		{
+			"name": "Diseño de Sistemas",
+			"confirms": 3,
+			"confirmsName": [{
+				"name": "Nikolai Emanuel Bayro"
+			}]
+		}
+	],
+	"achivements": [{
+			"name": "CM Monitor"
+		},
+		{
+			"name": "System Manager LIE"
+		},
+		{
+			"name": "Alarm System LIE"
+		},
+		{
+			"name": "System Manager LIE SAR"
+		},
+		{
+			"name": "Laboratory Manager System LIE"
+		}
+	]
+}

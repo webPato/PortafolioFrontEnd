@@ -1,0 +1,32 @@
+<div class="card mat-card">
+    <div class="col-sm-6 offset-sm-3">
+        <h3> Create Proyecto </h3>
+        <form (ngSubmit) = "onSubmitForm()">        
+            <div class="form-group">
+                <label>Titulo</label>                
+                <input type="text" class ="form-control" id = "titulo"
+                [(ngModel)]="titulo" name = "titulo">
+            </div> 
+            <br>
+            <div class="form-group">
+                <label>Descripcion</label>                
+                <input type="text" class ="form-control" id = "descripcion"
+                [(ngModel)]="descripcion" name = "descripcion">
+            </div> 
+            <br>
+            <div class="form-group">
+                <label>Fecha</label>                
+                <input type="text" class ="form-control" id = "fecha"
+                [(ngModel)]="fecha" name = "fecha">
+            </div> 
+            <br>
+            <div class="form-group">
+                <label>Link</label>                
+                <input type="text" class ="form-control" id = "link"
+                [(ngModel)]="link" name = "link">
+            </div> 
+            <br>
+            <button class = "btn btn-success" type ="submit">Add</button>        
+        </form>        
+    </div> 
+</div> 

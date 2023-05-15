@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.mat-card{
+	border-radius: 32px;
+	margin: 10px 10px;
+	padding: 20px;
+	border-color: #0a66c2;
+}
+.mat-card#first-card{
+	padding: 0;
+}
+
+.profile-image{
+	border-radius: 50%;
+	width: 152px;
+	height: 152px;
+	margin-top: -110px;
+	z-index: 1;
+}
+
+
+.d {
+    font-size: 4vh;
+}
+
+.animatedBox {
+    width: 10%;
+    height: 120px;
+    background: skyblue url('https://static.vecteezy.com/system/resources/previews/002/207/821/original/dark-blue-modern-technology-background-free-vector.jpg') no-repeat bottom center / 100%;
+    animation: myAnimation 3s ease 1s 3 alternate forwards;
+}
+      
+@keyframes myAnimation {
+    100% {
+    width: 100%;
+    }
+}

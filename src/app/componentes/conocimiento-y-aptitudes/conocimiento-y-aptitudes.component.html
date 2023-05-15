@@ -1,0 +1,33 @@
+<div class="card mat-card">
+    <h2>Conocimientos y Aptitudes</h2>
+    <table class = "table table-striped">
+        <thead>
+            <tr>            
+                <th>ID</th>    
+                <th>Description</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <!-- El bucle recorre por cada id-->
+        <!-- Este archivo html está asociado a su respectivo .ts -->
+        <!-- conocApti es una propiedad definida en el .ts users: ConocimientoYAptitudes[]-->
+        <tbody>
+            <tr *ngFor = "let con of conocApti">
+                <!-- {{}} Es interpolación para acceder a los campos -->                
+                <td>{{con.id}}</td>
+                <td>{{con.descripcion}}</td>                
+                <td>
+                    <!--Estos botones llaman a los métodos definidos en el .ts del componente conocimiento-y-aptitudes.component-->                    
+                    <button (click) = "deleteConocimientosAptitudes(con.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    &nbsp;
+                    <!--<button (click) = "redirectEditConocApti()" class = "btn btn-info btn-xs"> Edit</button>-->
+                    <button (click) = "EditConocApti(con.id)" class = "btn btn-info"> Update</button>
+                </td>             
+            </tr>
+        </tbody>
+    </table>   
+    <div>
+        <button (click) = "redirectNewConocApti()" class = "btn btn-success"> New Aptitudes</button>
+        <!--<button type="button" class="btn btn-success" onclick="window.open('/new-aptitudes','_blank')"> New Aptitudes</button>-->
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="card mat-card">
+    <h2>Experiencia</h2>
+    <table class = "table table-striped">
+        <thead>
+            <tr>            
+                <th>ID</th>    
+                <th>Titulo</th>
+                <th>Cargo</th>
+                <th>Jornada</th>
+                <th>Tiempo</th>
+                <th>Descripcion</th>
+                <th>Options</th>
+            </tr>
+        </thead>  
+        <tbody>
+            <tr *ngFor = "let e of exp">                             
+                <td>{{e.id}}</td>
+                <td>{{e.titulo}}</td>
+                <td>{{e.cargo}}</td>            
+                <td>{{e.jornada}}</td>
+                <td>{{e.tiempo}}</td>
+                <td>{{e.descripcion}}</td>
+                <td>                    
+                    <button (click) = "deleteExperiencia(e.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    &nbsp;                    
+                    <button (click) = "editExperiencia(e.id)" class = "btn btn-info">Update</button>
+                </td>             
+            </tr>
+        </tbody>
+    </table>   
+    <div>
+        <button (click) = "redirectNewExperiencia()" class = "btn btn-success">New Experiencia</button>        
+    </div>
+</div>
+
