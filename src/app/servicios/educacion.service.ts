@@ -7,7 +7,8 @@ import { Educacion } from 'src/app/model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  private backendURL: string = "http://localhost:8080/educacion";
+  //private backendURL: string = "http://localhost:8080/educacion";
+  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/educacion";
 
   constructor(
     private httpClient: HttpClient

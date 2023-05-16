@@ -13,7 +13,7 @@ export class AcercaDeComponent implements OnInit {
  // descripcion: string = '';
  // id_persona: number= 1;
   acer: AcercaDe[] = [];
-
+  
   constructor(
     private acercadeService : AcercaDeService,
     private router: Router,
@@ -29,7 +29,7 @@ export class AcercaDeComponent implements OnInit {
       aData => {this.acer = aData}
     );
   }
-
+  
   deleteAcercaDe(id?: number){
     if(id != undefined){
       this.acercadeService.borrarAcercaDe(id).subscribe(
@@ -43,8 +43,8 @@ export class AcercaDeComponent implements OnInit {
     }
   } 
 
-  editAcercaDe(id?: number){    
-    this.router.navigate(['/edit-acercade', id]);
+  editAcercaDe(id?: number, descripcion?: string){    
+    this.router.navigate(['/edit-acercade/', id, descripcion]);
   }
 
 

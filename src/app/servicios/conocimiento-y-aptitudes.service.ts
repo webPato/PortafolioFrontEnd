@@ -8,7 +8,8 @@ import { ConocimientoYAptitudes } from 'src/app/model/conocimiento-y-aptitudes';
 })
 export class ConocimientoYAptitudesService {
    //Endpoint del Backend
-   private backendURL: string = "http://localhost:8080/aptitudes";
+   //private backendURL: string = "http://localhost:8080/aptitudes";
+   private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/aptitudes";
 
   constructor(
         //HttpClient para proporcionar métodos que reciben datos del backend

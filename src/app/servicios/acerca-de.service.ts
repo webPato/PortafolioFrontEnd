@@ -7,13 +7,13 @@ import { AcercaDe } from 'src/app/model/acerca-de';
   providedIn: 'root'
 })
 export class AcercaDeService {
-  private backendURL: string = "http://localhost:8080/acercade";
+  //private backendURL: string = "http://localhost:8080/acercade";
+  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/acercade";
 
   constructor(
     private httpClient: HttpClient
   ) { }
 
-  //Methods
   public verAcercaDe(): Observable<AcercaDe[]>{  
     return this.httpClient.get<AcercaDe[]>(this.backendURL + '/ver');    
   }

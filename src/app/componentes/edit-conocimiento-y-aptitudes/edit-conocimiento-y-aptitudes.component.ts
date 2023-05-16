@@ -31,8 +31,10 @@ export class EditConocimientoYAptitudesComponent implements OnInit {
   get Descripcion(){return this.aptform.get("descripcion")}
 
   ngOnInit(): void { 
-    this.aptform.setValue({id: parseInt(this.activatedRoute.snapshot.params['id']),
-    descripcion: this.aptform.value.descripcion})    
+    this.aptform.setValue({
+      id: parseInt(this.activatedRoute.snapshot.params['id']),
+    descripcion: this.activatedRoute.snapshot.params['descripcion']
+  })    
     }
 
     editConocimientosAptitudes(id?: number) {

@@ -8,7 +8,8 @@ import { Direccion } from 'src/app/model/direccion';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private backendURL: string = "http://localhost:8080/experiencia";
+  //private backendURL: string = "http://localhost:8080/experiencia";
+  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/experiencia";
 
   constructor(
     private httpClient: HttpClient
@@ -43,7 +44,9 @@ public borrarExperiencia(id: number): Observable<any>{
 }
 
 public verAllDirecciones(): Observable<Direccion[]>{
-  return this.httpClient.get<Direccion[]>("http://localhost:8080/direccion/ver")
+  //return this.httpClient.get<Direccion[]>("http://localhost:8080/direccion/ver")
+  return this.httpClient.get<Direccion[]>("https://portfolio-backend-zz6z.onrender.com/direccion/ver")
+  
  }
 
 
