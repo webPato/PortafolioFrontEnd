@@ -1,7 +1,12 @@
-<div class="card mat-card">
-    <h2>Acerca De</h2>            
-            <p *ngFor = "let acerca of acer">{{acerca.descripcion}} <br> 
-              <button (click) = "deleteAcercaDe(acerca.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
-              <button (click) = "editAcercaDe(acerca.id)" class = "btn btn-info"> Update</button>
-            </p>
-</div>
+
+   
+            <span>
+                <h2>Acerca De mí</h2>  
+                <br>          
+                        <p *ngFor = "let acerca of acer">{{acerca.descripcion}} <br>                        
+                        <button (click) = "editAcercaDe(acerca.id,acerca.descripcion)" class = "btn btn-info"> Update</button>
+                        </p>
+            </span>
+        
+    
+

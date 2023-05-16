@@ -48,9 +48,9 @@ export class ConocimientoYAptitudesComponent implements OnInit {
       }
     } 
 
-    EditConocApti(id?: number){
+    EditConocApti(id?: number, descripcion?: string){
       //Lo envía a través de app-routing.module.ts
-      this.router.navigate(['/edit-aptitudes', id]);
+      this.router.navigate(['/edit-aptitudes', id, descripcion]);
     }
    
 

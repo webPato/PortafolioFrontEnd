@@ -11,12 +11,14 @@ import { CreateEducacionComponent } from './componentes/create-educacion/create-
 import { EditEducacionComponent } from './componentes/edit-educacion/edit-educacion.component';
 import { CreateExperienciaComponent } from './componentes/create-experiencia/create-experiencia.component';
 import { EditExperienciaComponent } from './componentes/edit-experiencia/edit-experiencia.component';
+import { EditAcercaDeComponent } from './componentes/edit-acerca-de/edit-acerca-de.component';
+import { HomeComponent } from './componentes/home/home.component';
 
 
 const routes: Routes = [
-
+  {path:'', component: HomeComponent },
   { path: 'new-aptitudes', component: CreateConocimientoYAptitudesComponent},
-  { path: 'edit-aptitudes/:id', component: EditConocimientoYAptitudesComponent},
+  { path: 'edit-aptitudes/:id/:descripcion', component: EditConocimientoYAptitudesComponent},
   { path: 'new-cursos', component: CreateCursosComponent},
   { path: 'edit-cursos/:id', component: EditCursosComponent},
   { path: 'new-proyectos', component: CreateProyectosComponent},
@@ -24,10 +26,11 @@ const routes: Routes = [
   { path: 'new-educacion', component: CreateEducacionComponent},
   { path: 'edit-educacion/:id', component: EditEducacionComponent},
   { path: 'new-experiencia', component: CreateExperienciaComponent},
-  { path: 'edit-experiencia/:id', component: EditExperienciaComponent}
+  { path: 'edit-experiencia/:id', component: EditExperienciaComponent},
+  { path: 'edit-acercade/:id/:descripcion', component: EditAcercaDeComponent}
   
  // { path: '', redirectTo: '/aptitudes/new', pathMatch: 'full' }
-
+ 
 ];
 
 @NgModule({

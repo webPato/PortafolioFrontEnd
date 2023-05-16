@@ -48,13 +48,14 @@ export class EditExperienciaComponent implements OnInit {
    get Direccion(){return this.expform.get("direccion")}
  
    ngOnInit(): void { 
-    this.expform.setValue({id: parseInt(this.activatedRoute.snapshot.params['id']),
-    titulo: this.expform.value.titulo,
-    cargo: this.expform.value.cargo,
-    jornada: this.expform.value.jornada,
-    tiempo: this.expform.value.tiempo,
-    descripcion: this.expform.value.descripcion,
-    direccion: this.expform.value.direccion    
+    this.expform.setValue({
+      id: parseInt(this.activatedRoute.snapshot.params['id']),
+    titulo: this.activatedRoute.snapshot.params['titulo'],
+    cargo: this.activatedRoute.snapshot.params['cargo'],
+    jornada: this.activatedRoute.snapshot.params['jornada'],
+    tiempo: this.activatedRoute.snapshot.params['tiempo'],
+    descripcion: this.activatedRoute.snapshot.params['descripcion'],
+    direccion: this.activatedRoute.snapshot.params['direccion']    
   })    
     }
  

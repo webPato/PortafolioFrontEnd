@@ -7,7 +7,8 @@ import { Proyectos } from 'src/app/model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-  private backendURL: string = "http://localhost:8080/proyectos";
+  //private backendURL: string = "http://localhost:8080/proyectos";
+  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/proyectos";
 
   constructor(
     private httpClient: HttpClient
