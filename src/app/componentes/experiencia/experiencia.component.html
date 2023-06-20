@@ -21,9 +21,9 @@
                 <td>{{e.tiempo}}</td>
                 <td>{{e.descripcion}}</td>
                 <td>                    
-                    <button (click) = "deleteExperiencia(e.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    <button (click) = "deleteExperiencia(e.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> <i class="fa-solid fa-xmark"></i></button>
                     &nbsp;                    
-                    <button (click) = "editExperiencia(e.id)" class = "btn btn-info">Update</button>
+                    <button (click) = "editExperiencia(e.id,e.titulo,e.cargo,e.jornada,e.tiempo,e.descripcion)" class = "btn btn-info"><i class="fa-solid fa-pen"></i></button>                    
                 </td>             
             </tr>
         </tbody>

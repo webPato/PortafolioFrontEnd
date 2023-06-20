@@ -9,7 +9,8 @@ import { Direccion } from 'src/app/model/direccion';
 })
 export class ExperienciaService {
   //private backendURL: string = "http://localhost:8080/experiencia";
-  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/experiencia";
+  //private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/experiencia";
+  private backendURL: string = "https://back-portfolio-ph.onrender.com/experiencia";
 
   constructor(
     private httpClient: HttpClient

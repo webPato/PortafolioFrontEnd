@@ -37,9 +37,9 @@ export class EditEducacionComponent implements OnInit {
 
   ngOnInit(): void { 
    this.eduform.setValue({id: parseInt(this.activatedRoute.snapshot.params['id']),
-   titulo: this.eduform.value.titulo,
-   entidad: this.eduform.value.entidad,
-   duracion: this.eduform.value.duracion
+   titulo: this.activatedRoute.snapshot.params['titulo'],
+   entidad: this.activatedRoute.snapshot.params['entidad'],
+   duracion: this.activatedRoute.snapshot.params['duracion'] 
  })    
    }
 
@@ -53,7 +53,8 @@ export class EditEducacionComponent implements OnInit {
      };      
      this.educacionService.editarEducacion(educacion).subscribe(
        eduData =>{          
-         alert("Educacion Editado");                      
+         alert("Educación Editada");                      
+         this.router.navigate(['home']);
        }, 
        err => {          
          alert("Error al editar educacion");

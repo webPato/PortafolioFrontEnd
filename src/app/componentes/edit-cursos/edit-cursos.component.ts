@@ -37,9 +37,9 @@ export class EditCursosComponent implements OnInit {
 
    ngOnInit(): void { 
     this.curform.setValue({id: parseInt(this.activatedRoute.snapshot.params['id']),
-    titulo: this.curform.value.titulo,
-    entidad: this.curform.value.entidad,
-    fecha: this.curform.value.fecha
+    titulo: this.activatedRoute.snapshot.params['titulo'],
+    entidad: this.activatedRoute.snapshot.params['entidad'],
+    fecha: this.activatedRoute.snapshot.params['fecha']
   })    
     }
 
@@ -53,7 +53,8 @@ export class EditCursosComponent implements OnInit {
       };      
       this.cursosService.editarCursos(curso).subscribe(
         curData =>{          
-          alert("Curso Editado");                      
+          alert("Curso Editado");        
+          this.router.navigate(['home']);              
         }, 
         err => {          
           alert("Error al editar curso");

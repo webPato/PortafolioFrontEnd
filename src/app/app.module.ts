@@ -28,6 +28,7 @@ import { EditAcercaDeComponent } from './componentes/edit-acerca-de/edit-acerca-
 import { HomeComponent } from './componentes/home/home.component';
 import { PersonaComponent } from './componentes/persona/persona.component';
 import { BannerComponent } from './componentes/banner/banner.component';
+import { EditPersonaComponent } from './componentes/edit-persona/edit-persona.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { BannerComponent } from './componentes/banner/banner.component';
     HomeComponent,
     PersonaComponent,
     BannerComponent,
+    EditPersonaComponent,
     
    
   ],

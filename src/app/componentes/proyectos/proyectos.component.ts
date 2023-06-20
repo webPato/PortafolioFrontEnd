@@ -39,8 +39,8 @@ export class ProyectosComponent implements OnInit {
     }
   } 
 
-  editProyectos(id?: number){    
-    this.router.navigate(['/edit-proyectos', id]);
+  editProyectos(id?: number, titulo?: string, descripcion?: string, fecha?: string, link?: string){    
+    this.router.navigate(['/edit-proyectos', id,  titulo, descripcion, fecha, link]);
   }
 
   redirectNewProyectos(){

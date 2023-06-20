@@ -40,8 +40,8 @@ export class CursosComponent implements OnInit {
     }
   } 
 
-  editCursos(id?: number){    
-    this.router.navigate(['/edit-cursos', id]);
+  editCursos(id?: number, titulo?: string, entidad?: string, fecha?: string){    
+    this.router.navigate(['/edit-cursos', id, titulo, entidad, fecha]);
   }
 
   redirectNewCursos(){

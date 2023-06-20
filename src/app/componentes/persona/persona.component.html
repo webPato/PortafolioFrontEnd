@@ -11,8 +11,9 @@
             {{p.fechaNac}}<br>
             {{p.tel}} <br>
             {{p.email}}<br>
-            Ing. en Computación
-        </p>        
+            Ing. en Computación<br>                           
+        <button (click) = "editPersona(p.id, p.nombre, p.apellido, p.fechaNac, p.tel, p.email)" class = "btn btn-info"><i class="fa-solid fa-pen"></i></button>
+    </p> 
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <app-acerca-de></app-acerca-de>

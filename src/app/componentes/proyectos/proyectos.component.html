@@ -19,9 +19,9 @@
                 <td>{{pr.fecha}}</td>
                 <td>{{pr.link}}</td>
                 <td>                    
-                    <button (click) = "deleteProyectos(pr.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    <button (click) = "deleteProyectos(pr.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"><i class="fa-solid fa-xmark"></i></button>
                     &nbsp;                    
-                    <button (click) = "editProyectos(pr.id)" class = "btn btn-info">Update</button>
+                    <button (click) = "editProyectos(pr.id, pr.titulo, pr.descripcion, pr.fecha, pr.link)" class = "btn btn-info"><i class="fa-solid fa-pen"></i></button>                    
                 </td>             
             </tr>
         </tbody>

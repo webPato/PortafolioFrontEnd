@@ -31,10 +31,10 @@ export class AcercaDeComponent implements OnInit {
   }
   
   deleteAcercaDe(id?: number){
-    if(id != undefined){
+    if(id != undefined){      
       this.acercadeService.borrarAcercaDe(id).subscribe(
-        data => {
-          alert("AcercaDe eliminado correctamente")
+        data => {          
+          alert("Acerca De mí eliminado correctamente")
           this.getAcercaDe();
         }, err =>{
           alert("AcercaDe no eliminado");
@@ -46,6 +46,5 @@ export class AcercaDeComponent implements OnInit {
   editAcercaDe(id?: number, descripcion?: string){    
     this.router.navigate(['/edit-acercade/', id, descripcion]);
   }
-
 
 }

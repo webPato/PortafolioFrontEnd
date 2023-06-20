@@ -8,7 +8,8 @@ import { Persona } from 'src/app/model/persona';
 })
 export class PersonaService {
   //private backendURL: string = "http://localhost:8080/persona";
-  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/persona";
+  //private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/persona";
+  private backendURL: string = "https://back-portfolio-ph.onrender.com/persona";
 
   constructor(
     private httpClient: HttpClient
@@ -18,4 +19,9 @@ export class PersonaService {
   public verPersona(): Observable<Persona[]>{  
     return this.httpClient.get<Persona[]>(this.backendURL + '/ver');    
   }   
+
+    //PUT
+public editarPersona(per: Persona): Observable<any>{
+  return this.httpClient.put<any>(this.backendURL + `/edit`, per);
+}
 }

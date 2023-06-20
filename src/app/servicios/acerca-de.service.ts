@@ -8,7 +8,8 @@ import { AcercaDe } from 'src/app/model/acerca-de';
 })
 export class AcercaDeService {
   //private backendURL: string = "http://localhost:8080/acercade";
-  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/acercade";
+  //private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/acercade";
+  private backendURL: string = "https://back-portfolio-ph.onrender.com/acercade";
 
   constructor(
     private httpClient: HttpClient

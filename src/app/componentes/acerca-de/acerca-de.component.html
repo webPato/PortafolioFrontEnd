@@ -1,12 +1,18 @@
 
    
+            <head>             
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />                       
+            </head>     
             <span>
                 <h2>Acerca De mí</h2>  
                 <br>          
-                        <p *ngFor = "let acerca of acer">{{acerca.descripcion}} <br>                        
-                        <button (click) = "editAcercaDe(acerca.id,acerca.descripcion)" class = "btn btn-info"> Update</button>
-                        </p>
+                  <p *ngFor = "let acerca of acer">{{acerca.descripcion}} <br>      
+                    <button (click) = "deleteAcercaDe(acerca.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> <i class="fa-solid fa-xmark"></i></button>
+                    &nbsp;                    
+                    <button (click) = "editAcercaDe(acerca.id,acerca.descripcion)" class = "btn btn-info"> <i class="fa-solid fa-pen"></i></button> 
+                  </p>
             </span>
         
+                    
     
 

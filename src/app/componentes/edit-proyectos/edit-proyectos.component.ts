@@ -39,10 +39,10 @@ export class EditProyectosComponent implements OnInit {
 
   ngOnInit(): void { 
    this.proform.setValue({id: parseInt(this.activatedRoute.snapshot.params['id']),
-   titulo: this.proform.value.titulo,
-   descripcion: this.proform.value.descripcion,
-   fecha: this.proform.value.fecha,
-   link: this.proform.value.link
+   titulo: this.activatedRoute.snapshot.params['titulo'],
+   descripcion: this.activatedRoute.snapshot.params['descripcion'],
+   fecha: this.activatedRoute.snapshot.params['fecha'],
+   link: this.activatedRoute.snapshot.params['link']   
  })    
    }
 
@@ -57,7 +57,8 @@ export class EditProyectosComponent implements OnInit {
      };      
      this.proyectosService.editarProyectos(proyectos).subscribe(
        proData =>{          
-         alert("Proyecto Editado");                      
+         alert("Proyecto Editado");
+         this.router.navigate(['home']);               
        }, 
        err => {          
          alert("Error al editar proyecto");

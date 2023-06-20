@@ -1,0 +1,27 @@
+<app-encabezado></app-encabezado>
+<app-banner></app-banner>
+
+<div class="card mat-card">
+    <h3> Update Persona</h3>
+    <form [formGroup]="pform"  (ngSubmit) = "editPersona()">
+        <div class="form-group">
+            <label>ID</label>            
+            <input type="text" class ="form-control" id = "id"
+            formControlName="id" name = "id">
+        </div> 
+        <br>
+        <div class="form-group">
+            <label>Tel</label>            
+            <input type="text" class ="form-control" id = "tel"
+            [(ngModel)]="tel" name = "tel">
+        </div> 
+        <br>
+        <div class="form-group">
+            <label>Email</label>            
+            <input type="text" class ="form-control" id = "email"
+            [(ngModel)]="email" name = "email">
+        </div> 
+        <br>
+        <button class = "btn btn-success" type ="submit">Edit</button>        
+    </form>
+</div> 
