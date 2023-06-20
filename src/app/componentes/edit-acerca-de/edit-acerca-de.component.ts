@@ -45,7 +45,8 @@ export class EditAcercaDeComponent implements OnInit {
      };      
      this.acercaDeService.editarAcercaDe(acerca_de).subscribe(
        acData =>{          
-         alert("AcercaDe Editado");                      
+         alert("Acerca De mí Editado");          
+         this.router.navigate(['home']);            
        }, 
        err => {          
          alert("Error al editar AcercaDe");

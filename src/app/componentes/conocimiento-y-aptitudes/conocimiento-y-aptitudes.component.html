@@ -18,10 +18,10 @@
                 <td>{{con.descripcion}}</td>                
                 <td>
                     <!--Estos botones llaman a los métodos definidos en el .ts del componente conocimiento-y-aptitudes.component-->                    
-                    <button (click) = "deleteConocimientosAptitudes(con.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    <button (click) = "deleteConocimientosAptitudes(con.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"><i class="fa-solid fa-xmark"></i></button>
                     &nbsp;
                     <!--<button (click) = "redirectEditConocApti()" class = "btn btn-info btn-xs"> Edit</button>-->
-                    <button (click) = "EditConocApti(con.id,con.descripcion)" class = "btn btn-info"> Update</button>
+                    <button (click) = "EditConocApti(con.id,con.descripcion)" class = "btn btn-info"><i class="fa-solid fa-pen"></i></button>
                 </td>             
             </tr>
         </tbody>

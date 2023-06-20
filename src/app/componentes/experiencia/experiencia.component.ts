@@ -41,8 +41,8 @@ export class ExperienciaComponent implements OnInit {
     }
   } 
 
-  editExperiencia(id?: number){    
-    this.router.navigate(['/edit-experiencia', id]);
+  editExperiencia(id?: number, titulo?: string, cargo?: string, jornada?: string, tiempo?: string, descripcion?: string){    
+    this.router.navigate(['/edit-experiencia', id, titulo, cargo, jornada, tiempo, descripcion]);
   }
 
   redirectNewExperiencia(){

@@ -35,7 +35,7 @@ export class EditExperienciaComponent implements OnInit {
       jornada: [''],
       tiempo: [''],
       descripcion: [''],
-      id_direccion: ['']
+     // id_direccion: ['']
     });
    }
 
@@ -45,17 +45,17 @@ export class EditExperienciaComponent implements OnInit {
    get Jornada(){return this.expform.get("jornada")}
    get Tiempo(){return this.expform.get("tiempo")}
    get Descripcion(){return this.expform.get("descripcion")}
-   get Direccion(){return this.expform.get("direccion")}
+   //get Direccion(){return this.expform.get("direccion")}
  
    ngOnInit(): void { 
     this.expform.setValue({
-      id: parseInt(this.activatedRoute.snapshot.params['id']),
+    id: parseInt(this.activatedRoute.snapshot.params['id']),
     titulo: this.activatedRoute.snapshot.params['titulo'],
     cargo: this.activatedRoute.snapshot.params['cargo'],
     jornada: this.activatedRoute.snapshot.params['jornada'],
     tiempo: this.activatedRoute.snapshot.params['tiempo'],
-    descripcion: this.activatedRoute.snapshot.params['descripcion'],
-    direccion: this.activatedRoute.snapshot.params['direccion']    
+    descripcion: this.activatedRoute.snapshot.params['descripcion']
+    //direccion: this.activatedRoute.snapshot.params['direccion']
   })    
     }
  
@@ -67,12 +67,13 @@ export class EditExperienciaComponent implements OnInit {
         jornada: this.expform.value.jornada,
         tiempo: this.expform.value.tiempo,
         descripcion: this.expform.value.descripcion,
-        id_direccion: this.expform.value.direccion,   
+        id_direccion: 1,   
         id_persona: 1      
       };      
       this.experienciaService.editarExperiencia(exper).subscribe(
         expData =>{          
-          alert("Experiencia Editado");                      
+          alert("Experiencia Editada");                      
+          this.router.navigate(['home']);
         }, 
         err => {          
           alert("Error al editar experiencia");

@@ -7,7 +7,7 @@ export class Persona {
     email: string; 
     tel: number;
     
-    
+  
     constructor(id: number, nombre: string, apellido: string, dni: number, fechaNac: string, email: string, tel: number){
         this.id = id;
         this.nombre = nombre;
@@ -17,4 +17,11 @@ export class Persona {
         this.email = email;
         this.tel = tel;        
     }
+
+     
+   /* constructor(id: number, email: string, tel: number){
+        this.id = id;        
+        this.tel = tel;
+        this.email = email;        
+    }*/
 }

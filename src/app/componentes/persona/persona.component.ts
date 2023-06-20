@@ -26,4 +26,10 @@ export class PersonaComponent implements OnInit {
     );
   }
 
+  editPersona(id?: number, nombre?: string, apellido?: string, fechaNac?: string, tel?: number, email?: string){    
+    this.router.navigate(['/edit-persona', id, nombre, apellido, fechaNac, tel, email]);
+  }  
+
+  
+
 }

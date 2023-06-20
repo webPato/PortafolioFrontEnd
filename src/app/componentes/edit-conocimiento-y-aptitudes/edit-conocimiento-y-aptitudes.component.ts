@@ -45,7 +45,8 @@ export class EditConocimientoYAptitudesComponent implements OnInit {
       };      
       this.conocimientoYAptitudesService.editarConAptitud(concyapt).subscribe(
         conData =>{          
-          alert("Aptitud editada");                      
+          alert("Aptitud Editada"); 
+          this.router.navigate(['home']);                     
         }, 
         err => {          
           alert("Error al editar aptitud");

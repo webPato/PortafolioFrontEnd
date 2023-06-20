@@ -40,10 +40,10 @@ export class EducacionComponent implements OnInit {
     }
   } 
 
-  editEducacion(id?: number){    
-    this.router.navigate(['/edit-educacion', id]);
+  editEducacion(id?: number, titulo?: string, entidad?: string, duracion?: string){    
+    this.router.navigate(['/edit-educacion', id, titulo, entidad, duracion]);
   }
-
+  
   redirectNewEducacion(){
     this.router.navigate(['/new-educacion']);
   }

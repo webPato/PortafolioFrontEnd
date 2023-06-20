@@ -8,7 +8,8 @@ import { Educacion } from 'src/app/model/educacion';
 })
 export class EducacionService {
   //private backendURL: string = "http://localhost:8080/educacion";
-  private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/educacion";
+  //private backendURL: string = "https://portfolio-backend-zz6z.onrender.com/educacion";
+  private backendURL: string = "https://back-portfolio-ph.onrender.com/educacion";
 
   constructor(
     private httpClient: HttpClient

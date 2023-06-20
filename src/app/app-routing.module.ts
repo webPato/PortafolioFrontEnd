@@ -13,24 +13,26 @@ import { CreateExperienciaComponent } from './componentes/create-experiencia/cre
 import { EditExperienciaComponent } from './componentes/edit-experiencia/edit-experiencia.component';
 import { EditAcercaDeComponent } from './componentes/edit-acerca-de/edit-acerca-de.component';
 import { HomeComponent } from './componentes/home/home.component';
-
+import { EditPersonaComponent } from './componentes/edit-persona/edit-persona.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent },
+  { path: 'home', component: HomeComponent},
   { path: 'new-aptitudes', component: CreateConocimientoYAptitudesComponent},
   { path: 'edit-aptitudes/:id/:descripcion', component: EditConocimientoYAptitudesComponent},
   { path: 'new-cursos', component: CreateCursosComponent},
-  { path: 'edit-cursos/:id', component: EditCursosComponent},
+  { path: 'edit-cursos/:id/:titulo/:entidad/:fecha', component: EditCursosComponent},
   { path: 'new-proyectos', component: CreateProyectosComponent},
-  { path: 'edit-proyectos/:id', component: EditProyectosComponent},
+  { path: 'edit-proyectos/:id/:titulo/:descripcion/:fecha/:link', component: EditProyectosComponent},
   { path: 'new-educacion', component: CreateEducacionComponent},
-  { path: 'edit-educacion/:id', component: EditEducacionComponent},
+  { path: 'edit-educacion/:id/:titulo/:entidad/:duracion', component: EditEducacionComponent},
   { path: 'new-experiencia', component: CreateExperienciaComponent},
-  { path: 'edit-experiencia/:id', component: EditExperienciaComponent},
-  { path: 'edit-acercade/:id/:descripcion', component: EditAcercaDeComponent}
-  
+  { path: 'edit-experiencia/:id/:titulo/:cargo/:jornada/:tiempo/:descripcion', component: EditExperienciaComponent},
+  { path: 'edit-acercade/:id/:descripcion', component: EditAcercaDeComponent},
+  { path: 'edit-persona/:id/:nombre/:apellido/:fechaNac/:tel/:email', component: EditPersonaComponent}
+
  // { path: '', redirectTo: '/aptitudes/new', pathMatch: 'full' }
- 
+
 ];
 
 @NgModule({

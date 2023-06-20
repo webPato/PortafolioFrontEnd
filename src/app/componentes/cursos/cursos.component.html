@@ -17,9 +17,9 @@
                 <td>{{c.entidad}}</td>
                 <td>{{c.fecha}}</td>
                 <td>                    
-                    <button (click) = "deleteCursos(c.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"> Delete</button>
+                    <button (click) = "deleteCursos(c.id)" class = "btn btn-danger btn-xs" style="margin-left: 0px"><i class="fa-solid fa-xmark"></i></button>
                     &nbsp;                    
-                    <button (click) = "editCursos(c.id)" class = "btn btn-info">Update</button>
+                    <button (click) = "editCursos(c.id,c.titulo,c.entidad,c.fecha)" class = "btn btn-info"><i class="fa-solid fa-pen"></i></button>                    
                 </td>             
             </tr>
         </tbody>
